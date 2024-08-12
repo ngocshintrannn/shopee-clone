@@ -88,7 +88,7 @@
 /* qr code dl */
 .navbar__item--show-qr:hover .qr-code {
   display: block;
-  animation: showQR ease 0.3s;
+  animation: showQR ease 0.2s;
 }
 
 @keyframes showQR {
