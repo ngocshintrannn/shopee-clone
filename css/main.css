@@ -1,7 +1,7 @@
 /* navbar header */
 .header {
   height: 120px;
-  background-image: linear-gradient(0, #f63, #f53d2d);
+  background-image: var(--primary-gradient);
 }
 
 .navbar {
@@ -142,6 +142,10 @@
 }
 
 /* notify */
+.navbar__item--show-notify:hover .notify {
+  display: block;
+}
+
 .notify {
   position: absolute;
   top: 30px;
@@ -149,6 +153,56 @@
   width: 402px;
   background-color: var(--white-color);
   border: 1px solid #d3d3d3;
+  border-radius: 2px;
+  font-size: 14px;
+  -webkit-user-select: none;
+  user-select: none;
+  transform-origin: 360.695px top;
+  animation: notifyGrowth ease-in-out 0.2s;
+  z-index: 10;
+  display: none;
+}
+
+.notify::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -15px;
+  right: -1px;
+  width: 80px;
+  height: 15px;
+}
+
+@keyframes notifyGrowth {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.notify-arrow {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-bottom: 10px solid rgb(255, 255, 255);
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  left: 360.695px;
+  transform: translate(-7px, -100%);
+  z-index: 10;
+  will-change: opacity, transform;
+}
+
+.notify-container {
+  background-color: #fff;
+  box-shadow: 0 1px 50px 0 rgba(0, 0, 0, .2);
+  color: #000;
+  overflow: hidden;
+  width: 400px;
 }
 
 .notify-header {
@@ -158,15 +212,21 @@
   text-transform: capitalize;
   display: flex;
   align-items: center;
-  font-size: 14px;
-}
-
-.notify-body {
-
 }
 
 .notify-item {
   display: flex;
+  padding: 8px 10px;
+  background-color: rgb(255, 242, 238);
+  cursor: pointer;
+}
+
+.notify-item:hover {
+  background-color: #f8f8f8;
+}
+
+.notify-item--viewed {
+  background-color: #f8f8f8;
 }
 
 .notify-item__img {
@@ -184,21 +244,27 @@
 }
 
 .notify-item__info {
+  line-height: 15px;
 }
 
 .notify-item__info-name {
   color: rgba(0, 0, 0, .8);
-  font-size: 14px;
   margin-bottom: 5px;
 }
 
 .notify-item__info-decs {
   font-size: 12px;
-  line-height: 15px;
   margin-bottom: 5px;
   color: rgba(0, 0, 0, 0.54);
 }
 
 .notify-footer {
-
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcfcfc;
+  color: rgba(0, 0, 0, .8);
+  height: 40px;
+  width: 100%;
+  text-decoration: none;
 }
