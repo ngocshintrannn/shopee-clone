@@ -271,6 +271,7 @@
 
 /* modal */
 .modal {
+  display: flex;
   position: fixed;
   top: 0;
   right: 0;
@@ -281,4 +282,51 @@
 .modal__overlay {
   position: absolute;
   width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.modal__body {
+  margin: auto;
+  background-color: var(--white-color);
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .14);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.social-btn {
+  width: 20%;
+  height: 40px;
+}
+
+.social-icon {
+  height: 36px;
+  width: 36px;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon-size {
+  height: 22px;
+  width: 22px;
+  flex-shrink: 0;
+}
+
+.social-white-fb-blue-png {
+  background-position: 5.555555555555555% 62.666666666666664%;
+  background-size: 325% 287.5%;
+}
+
+.social-white-google-png {
+  background-position: 83.92857142857143% 5.154639175257732%;
+  background-size: 722.2222222222222% 638.8888888888889%;
+}
+
+.social-white-background {
+  background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/7ffa33c1e9518f30.png);
 }
