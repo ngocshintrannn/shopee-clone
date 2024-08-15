@@ -502,7 +502,7 @@
   height: 40px;
 }
 
-.auth-form__other-options {
+.auth-form__help {
   font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.8);
   margin: 10px 0 -5px;
@@ -511,6 +511,6 @@
   justify-content: flex-end;
 }
 
-.auth-form__resetpwd {
+.auth-form__help__link {
   color: #05a;
 }
