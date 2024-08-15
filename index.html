@@ -17,13 +17,13 @@
       <div class="grid">
         <nav class="navbar">
           <ul class="navbar__list">
-            <li class="navbar__item navbar__item--separate">
+            <li class="navbar__item text-decor-disable navbar__item--separate">
               <a href="#" class="navbar__item-link">
                 Kênh Người Bán
               </a>
             </li>
 
-            <li class="navbar__item navbar__item--show-qr navbar__item--separate">
+            <li class="navbar__item text-decor-disable navbar__item--show-qr navbar__item--separate">
               <a href="#" class="navbar__item-link">
                 Tải ứng dụng
               </a>
@@ -43,7 +43,7 @@
                 </div>
             </li>
 
-            <li class="navbar__item">
+            <li class="navbar__item text-decor-disable">
               <span class="navbar__title--no-pointer">Kết nối</span>
               <a href="#" class="navbar__item-link navbar__icon-brand navbar__facebook" title="Kết nối Facebook!">
               </a>
@@ -54,7 +54,7 @@
           </ul>
   
           <ul class="navbar__list">
-            <li class="navbar__item navbar__item--show-notify">
+            <li class="navbar__item text-decor-disable navbar__item--show-notify">
               <a href="#" class="navbar__item-link">
                 <i class="navbar__icon fa-light fa-bell"></i>
                 Thông Báo
@@ -122,28 +122,28 @@
               </div>
             </li>
 
-            <li class="navbar__item">
+            <li class="navbar__item text-decor-disable">
               <a href="#" class="navbar__item-link">
                 <i class="navbar__icon fa-light fa-circle-question"></i>
                 Hỗ Trợ
               </a>
             </li>
 
-            <li class="navbar__item">
+            <li class="navbar__item text-decor-disable">
               <a href="#" class="navbar__item-link">
                 <i class="navbar__icon fa-light fa-globe"></i>
                 Tiếng Việt
               </a>
             </li>
 
-            <li class="navbar__item navbar__item--separate">
+            <li class="navbar__item text-decor-disable navbar__item--separate">
               <a href="#" class="navbar__item-link">
                 <i class="navbar__icon fa-duotone fa-solid fa-user-plus"></i>
                 Đăng Ký
               </a>
             </li>
 
-            <li class="navbar__item">
+            <li class="navbar__item text-decor-disable">
               <a href="#" class="navbar__item-link">
                 <i class="navbar__icon fa-duotone fa-solid fa-right-to-bracket"></i>
                 Đăng Nhập
@@ -167,8 +167,9 @@
 
   <div class="modal">
     <div class="modal__overlay"></div>
-
     <div class="modal__body">
+
+      <!-- register form -->
       <div class="auth-form">
         <div class="auth-form__container">
           <div class="auth-form__header">
@@ -181,7 +182,7 @@
             </div>
           </div>
 
-          <div class="auth-form__form">
+          <div class="auth-form__form select-disable">
             <div class="auth-form__group">
               <input type="email" id="email" class="auth-form__input" placeholder="Email" autocomplete="email" required>
             </div>
@@ -196,30 +197,36 @@
           </div>
 
           <div class="auth-form__aside">
-            <p class="auth-form__policy-text">Bằng việc đăng ký, bạn động ý với Shopee về <a href="#" class="auth-form__policy-link">Điều khoản dịch vụ</a> & <a href="#" class="auth-form__policy-link">Chính sách bảo mật</a>
+            <p class="auth-form__policy-text">Bằng việc đăng ký, bạn động ý với Shopee về <a href="#" class="auth-form__policy-link text-decor-disable select-disable">Điều khoản dịch vụ</a> & <a href="#" class="auth-form__policy-link text-decor-disable select-disable">Chính sách bảo mật</a>
             </p>
           </div>
 
           <div class="auth-form__controls">
-            <button class="btn">Trở lại</button>
-            <button type="submit" class="btn btn--primary">Đăng ký</button>
+            <button class="btn auth-form__btn">Trở lại</button>
+            <button type="submit" class="btn btn--primary auth-form__btn">Đăng ký</button>
           </div>
-        </div>
 
-        <div class="auth-form__socials">
-          <button class="social-btn">
-            <div class="social-icon">
-              <div class="social-icon-size social-white-background social-white-fb-blue-png "></div>
-              <span>Facebook</span>
-            </div>
-          </button>
-
-          <button class="social-btn">
-            <div class="social-icon">
-              <div class="social-icon-size social-white-background social-white-google-png"></div>
-              <span>Google</span>
-            </div>
-          </button>
+          <div class="auth-form__break">
+            <div class="auth-form__line"></div>
+            <div class="auth-form__line-title">Hoặc</div>
+            <div class="auth-form__line"></div>
+          </div>
+  
+          <div class="auth-form__socials">
+            <button class="btn social-btn">
+              <div class="social-group">
+                <div class="social-icon social-white-background social-white-fb-blue-png "></div>
+                <div>Facebook</div>
+              </div>
+            </button>
+  
+            <button class="btn social-btn">
+              <div class="social-group">
+                <div class="social-icon social-white-background social-white-google-png"></div>
+                <span>Google</span>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
     </div>

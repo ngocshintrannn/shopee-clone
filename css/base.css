@@ -42,3 +42,41 @@ html {
     opacity: 1;
   }
 }
+
+.text-decor-disable {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.select-disable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;  
+}
+
+.btn {
+  min-width: 142px;
+  height: 36px;
+  font-size: 1.4rem;
+  padding: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.09);
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+/* .class.class = chọn class phải có cả 2 */
+.btn.btn--primary {
+  color: var(--white-color);
+  background-color: var(--primary);
+}
+
+.btn.btn--disable {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
