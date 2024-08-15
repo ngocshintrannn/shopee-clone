@@ -298,12 +298,13 @@
   overflow: hidden;
 }
 
+/* register form */
 .auth-form {
-  max-width: 500px;
+  width: 400px;
 }
 
 .auth-form__container {
-  padding: 12px 30px 30px 30px;
+  padding: 12px 30px 12px 30px;
 }
 
 .auth-form__header {
@@ -317,6 +318,7 @@
 .auth-form__heading {
   font-size: 2rem;
   color: var(--text-color);
+  flex-shrink: 0;
 }
 
 .auth-form__switch-btn {
@@ -371,13 +373,13 @@
 }
 
 .auth-form__btn {
-  margin-left: 10px;
+  width: 100%;
   opacity: 0.7;
   text-transform: uppercase;
 }
 
 .auth-form__break {
-  padding: 20px 0;
+  padding: 15px 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -391,7 +393,7 @@
 }
 
 .auth-form__line-title {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #ccc;
   padding: 0 16px;
   text-transform: uppercase;
@@ -414,6 +416,10 @@
   height: 40px;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.social-btn:hover {
+  background-color: rgba(0, 0, 0, 0.02);
 }
 
 .social-group {
@@ -441,4 +447,70 @@
 
 .social-white-background {
   background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/7ffa33c1e9518f30.png);
+}
+
+.auth-form__footer {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, .2);
+  margin: 20px 0;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.auth-form__footer__link {
+  color: var(--primary);
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+/* login form */
+.auth-form__qr-login {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 20px;
+}
+
+.auth-form__qr-login__title {
+  font-size: 14px;
+  color: #ffbf00;
+  position: relative;
+  font-weight: 700;
+  margin-right: 16px;
+  padding: 11px 14px;
+  border: 2px solid #ffbf00;
+  border-radius: 2px;
+  background-color: #fefaec;
+}
+
+.auth-form__qr-login__title::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  right: -12px;
+  transform: rotate(45deg) translateX(-50%);
+  box-sizing: border-box;
+  border-right: 2px solid #ffbf00;
+  border-top: 2px solid #ffbf00;
+  background-color: #fefaec;
+}
+
+.auth-form__qr-login__link {
+  width: 40px;
+  height: 40px;
+}
+
+.auth-form__other-options {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 10px 0 -5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.auth-form__resetpwd {
+  color: #05a;
 }
