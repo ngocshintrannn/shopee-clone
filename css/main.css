@@ -114,6 +114,7 @@
   font-size: 1.4rem;
   line-height: 16.8px;
   display: none;
+  z-index: 10;
 }
 
 .qr-code::before {
@@ -521,4 +522,145 @@
 
 .auth-form__help__link {
   color: #05a;
+}
+
+/* header with search */
+.header-with-search,
+.header-with-search__logo,
+.shoppe-searchbar,
+.shoppe-searchbar-input,
+.header-with-search__cart-wrapper {
+  box-sizing: border-box;
+}
+
+.header-with-search {
+  height: 87px;
+  padding: 16px 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-with-search__logo {
+  padding-right: 40px;
+  top: -3px;
+}
+
+.header-with-search__logo-img {
+  width: 162px;
+  height: 50px;
+}
+
+.header-with-search__search {
+  color: rgba(0, 0, 0, 0.8);
+  width: 840px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.header-with-search__search > .shoppe-searchbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
+  width: 100%;
+}
+
+.shoppe-searchbar {
+  height: 40px;
+  background-color: #fff;
+  border-radius: 2px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 3px;
+  --focus-indicator-spacing: 3px;
+}
+
+.shoppe-searchbar__main {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+
+.shoppe-searchbar-input {
+  display: flex;
+  flex: 1;
+  padding: 0 10px;
+  position: relative;
+}
+
+.shoppe-searchbar-input__input {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  outline: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.shoppe-searchbar__search-btn {
+  max-width: 190px;
+  min-width: 60px;
+  height: 34px;
+  padding: 0 15px;
+  background-color: #fb5533 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  opacity: 0.9;
+}
+
+.search-btn__svg-icon {
+  margin: 0 auto;
+}
+
+.header-with-search__cart-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin: 0 10px;
+  padding-bottom: 5px;
+}
+
+.cart-drawer-container {
+  padding: 10px 0;
+}
+
+.cart-drawer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 0 0 5px;
+  outline: 0;
+  overflow: visible;
+  position: relative;
+}
+
+.cart-icon {
+  width: 26px;
+  height: 26px;
+  color: #fff;
+  stroke: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.shopee-cart-number-badge {
+  min-width: 11px;
+  height: 20px;
+  margin-right: -14px;
+  background-color: #fff;
+  border-radius: 44px;
+  color: var(--primary, #ee4d2d);
+  border: 2px solid var(--brand-primary-color, #ee4d2d);
+  padding: 0 5px;
+  position: relative;
+  top: -11px;
+  left: -20px;
+  font-size: 1.4rem;
+  line-height: 16.8px;
+  text-align: center;
 }

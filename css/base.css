@@ -54,6 +54,7 @@ html {
   border-radius: 2px;
   outline: none;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .btn:hover {
@@ -69,6 +70,14 @@ html {
 .btn.btn--disable {
   opacity: 0.7;
   cursor: not-allowed;
+}
+
+.shopee-svg-icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  fill: var(--white-color);
+  position: relative;
 }
 
 /* animation */
