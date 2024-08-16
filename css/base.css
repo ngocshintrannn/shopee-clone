@@ -81,6 +81,15 @@ html {
   }
 }
 
+@keyframes increase {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.89);
+  }
+}
+
 @keyframes growth {
   from {
     transform: scale(var(--growth-from));

@@ -271,21 +271,18 @@
 }
 
 /* modal */
-.modal-register {
-  display: none;
-}
-
-.modal-login {
-  display: none;
-}
-
 .modal {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0; 
   animation: fadeIn ease-in 0.1s;
+}
+
+.modal--open {
+  display: flex;
 }
 
 .modal__overlay {
