@@ -33,16 +33,6 @@ html {
   flex-wrap: wrap;
 }
 
-/* animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .text-decor-disable {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -79,4 +69,23 @@ html {
 .btn.btn--disable {
   opacity: 0.7;
   cursor: not-allowed;
+}
+
+/* animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes growth {
+  from {
+    transform: scale(var(--growth-from));
+  }
+  to {
+    transform: scale(var(--growth-to));
+  }
 }

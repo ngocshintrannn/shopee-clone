@@ -278,6 +278,7 @@
   right: 0;
   bottom: 0;
   left: 0; 
+  animation: fadeIn ease-in 0.1s;
 }
 
 .modal__overlay {
@@ -296,6 +297,9 @@
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.14);
   box-sizing: border-box;
   overflow: hidden;
+  --growth-from: 0.89;
+  --growth-to: 1;
+  animation: growth ease-in 0.1s;
 }
 
 /* register form */
