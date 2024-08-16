@@ -542,6 +542,7 @@
 
 .header-with-search__logo {
   padding-right: 40px;
+  position: relative;
   top: -3px;
 }
 
