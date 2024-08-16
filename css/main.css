@@ -271,8 +271,15 @@
 }
 
 /* modal */
+.modal-register {
+  display: none;
+}
+
+.modal-login {
+  display: none;
+}
+
 .modal {
-  display: flex;
   position: fixed;
   top: 0;
   right: 0;
