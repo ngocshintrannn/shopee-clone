@@ -7,6 +7,8 @@ var modalLogin = document.getElementById('modal__login');
 var switchLogin = document.querySelector('.js-switch-login');
 var switchRegister = document.querySelector('.js-switch-register');
 var notifyViews = document.querySelectorAll('.js-notify-item');
+var searchBarInput = document.querySelector('.js-searchbar-input');
+var searchBarPopover = document.querySelector('.js-searchbar-popover');
 
 // Show modal register
 registerBtn.onclick = function () {
@@ -54,3 +56,8 @@ for (var notifyViewed of notifyViews) {
     this.classList.add('notify-item--viewed');
   };
 }
+
+// Show history search
+// searchBarInput.onclick = function () {
+//   searchBarPopover.style.display = 'block';
+// }
