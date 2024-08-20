@@ -445,6 +445,10 @@
   flex-shrink: 0;
 }
 
+.social-white-background {
+  background-image: url(../assets/img/brands.png);
+}
+
 .social-white-fb-blue-png {
   background-position: 5.555555555555555% 62.666666666666664%;
   background-size: 325% 287.5%;
@@ -453,10 +457,6 @@
 .social-white-google-png {
   background-position: 83.92857142857143% 5.154639175257732%;
   background-size: 722.2222222222222% 638.8888888888889%;
-}
-
-.social-white-background {
-  background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/7ffa33c1e9518f30.png);
 }
 
 .auth-form__footer {
