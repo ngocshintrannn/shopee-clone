@@ -721,6 +721,17 @@
   white-space: nowrap;
 }
 
-.shoppe-searchbar-input {
-  
+.searchbar-outline.shoppe-searchbar-input::before {
+  border-radius: 2px;
+  bottom: -4px;
+  left: -4px;
+  content: "";
+  margin: calc(var(--focus-indicator-spacing)* -1);
+  outline: var(--focus-indicator-stroke-width) solid var(--focus-indicator-color);
+  padding: var(--focus-indicator-spacing);
+  pointer-events: none;
+  position: absolute;
+  right: 7px;
+  top: -4px;
+  z-index: 1;
 }

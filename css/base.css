@@ -7,6 +7,14 @@
   --primary-gradient: linear-gradient(0, #f63, #f53d2d);
 }
 
+:root {
+  --focus-indicator-color: rgba(0, 0, 0, 0.80);
+  --focus-indicator-stroke-width: 2px;
+  --focus-indicator-spacing: 4px;
+  --focus-indicator-border-radius: 2px;
+  --brand-primary-light-color: rgba(255, 87, 34, 0.1);
+}
+
 * {
   box-sizing: inherit;
 }
