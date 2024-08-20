@@ -58,6 +58,3 @@ for (var notifyViewed of notifyViews) {
 }
 
 // Show history search
-// searchBarInput.onclick = function () {
-//   searchBarPopover.style.display = 'block';
-// }

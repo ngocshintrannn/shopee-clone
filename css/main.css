@@ -280,6 +280,7 @@
   bottom: 0;
   left: 0; 
   animation: fadeIn ease-in 0.1s;
+  z-index: 110;
 }
 
 .modal--open {
@@ -674,10 +675,6 @@
   left: 0;
   z-index: 100;
   display: none;
-}
-
-.shoppe-searchbar-popover:focus-visible {
-  display: block;
 }
 
 .shoppe-searchbar-listbox {
