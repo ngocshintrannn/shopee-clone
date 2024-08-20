@@ -1,14 +1,14 @@
-var registerBtn = document.querySelector('.js-register-btn');
-var loginBtn = document.querySelector('.js-login-btn');
-var showModal = document.querySelector('.js-modal');
-var hideModals = document.querySelectorAll('.js-modal__body');
-var modalRegister = document.getElementById('modal__register');
-var modalLogin = document.getElementById('modal__login');
-var switchLogin = document.querySelector('.js-switch-login');
-var switchRegister = document.querySelector('.js-switch-register');
-var notifyViews = document.querySelectorAll('.js-notify-item');
-var searchBarInput = document.querySelector('.js-searchbar-input');
-var searchBarPopover = document.querySelector('.js-searchbar-popover');
+const registerBtn = document.querySelector('.js-register-btn');
+const loginBtn = document.querySelector('.js-login-btn');
+const showModal = document.querySelector('.js-modal');
+const hideModals = document.querySelectorAll('.js-modal__body');
+const modalRegister = document.getElementById('modal__register');
+const modalLogin = document.getElementById('modal__login');
+const switchLogin = document.querySelector('.js-switch-login');
+const switchRegister = document.querySelector('.js-switch-register');
+const notifyViews = document.querySelectorAll('.js-notify-item');
+const searchBarInput = document.querySelector('.js-searchbar-input');
+const searchBarPopover = document.querySelector('.js-searchbar-popover');
 
 // Show modal register
 registerBtn.onclick = function () {
@@ -58,3 +58,15 @@ for (var notifyViewed of notifyViews) {
 }
 
 // Show history search
+searchBarInput.addEventListener("focus", () => {
+  searchBarPopover.style.display = "block";
+});
+
+document.addEventListener("click", (event) => {
+  if (
+    !searchBarInput.contains(event.target) &&
+    !searchBarPopover.contains(event.target)
+  ) {
+    searchBarPopover.style.display = "none";
+  }
+});
