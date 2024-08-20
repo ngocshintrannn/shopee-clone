@@ -432,6 +432,11 @@
   background-color: rgba(0, 0, 0, 0.02);
 }
 
+.social-group,
+.social-icon {
+  flex-shrink: 0;
+}
+
 .social-group {
   display: flex;
   align-items: center;
@@ -442,7 +447,6 @@
   margin-right: 5px;
   height: 22px;
   width: 22px;
-  flex-shrink: 0;
 }
 
 .social-white-background {
